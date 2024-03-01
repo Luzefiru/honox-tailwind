@@ -1,11 +1,11 @@
 {
-  "name": "basic",
+  "name": "honox-tailwind",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build:css": "tailwindcss -i ./app/style.css -o ./dist/static/assets/style.css",
     "build": "npm run build:css && vite build --mode client && vite build",
-    "preview": "wrangler pages dev ./dist",
+    "preview": "npm run build && wrangler pages dev ./dist",
     "deploy": "npm run build && wrangler pages deploy ./dist"
   },
   "private": true,

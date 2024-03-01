@@ -1,6 +1,5 @@
 name = "app"
 compatibility_date = "2023-12-01"
-main = "src/index.tsx"
 
 [vars]
 SUPABASE_URL = "your-supabase-url"
